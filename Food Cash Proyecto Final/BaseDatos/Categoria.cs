@@ -7,30 +7,23 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Food_Cash_Proyecto_Final
+namespace Food_Cash_Proyecto_Final.BaseDatos
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Persona
+    public partial class Categoria
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Persona()
+        public Categoria()
         {
-            this.factura = new HashSet<factura>();
+            this.Producto = new HashSet<Producto>();
         }
     
-        public long identificacion { get; set; }
-        public string t_documento { get; set; }
-        public string nombre { get; set; }
-        public string direccion { get; set; }
-        public Nullable<long> telefono { get; set; }
-        public string correo { get; set; }
-        public int id_rol { get; set; }
+        public int id_categoria { get; set; }
+        public string categoria1 { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<factura> factura { get; set; }
-        public virtual Rol Rol { get; set; }
-        public virtual Usuario Usuario { get; set; }
+        public virtual ICollection<Producto> Producto { get; set; }
     }
 }

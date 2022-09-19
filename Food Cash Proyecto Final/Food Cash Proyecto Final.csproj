@@ -97,12 +97,12 @@
     <Content Include="Content\Account.css" />
     <Content Include="Content\Index.css" />
     <Content Include="Content\Site.css" />
-    <Content Include="FoodCashDB.Context.tt">
+    <Content Include="BaseDatos\FoodCashDB.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>FoodCashDB.edmx</DependentUpon>
       <LastGenOutput>FoodCashDB.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="FoodCashDB.tt">
+    <Content Include="BaseDatos\FoodCashDB.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>FoodCashDB.edmx</DependentUpon>
       <LastGenOutput>FoodCashDB.cs</LastGenOutput>
@@ -120,25 +120,25 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Categoria.cs">
+    <Compile Include="BaseDatos\Categoria.cs">
       <DependentUpon>FoodCashDB.tt</DependentUpon>
     </Compile>
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="factura.cs">
+    <Compile Include="BaseDatos\factura.cs">
       <DependentUpon>FoodCashDB.tt</DependentUpon>
     </Compile>
-    <Compile Include="FoodCashDB.Context.cs">
+    <Compile Include="BaseDatos\FoodCashDB.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>FoodCashDB.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="FoodCashDB.cs">
+    <Compile Include="BaseDatos\FoodCashDB.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>FoodCashDB.tt</DependentUpon>
     </Compile>
-    <Compile Include="FoodCashDB.Designer.cs">
+    <Compile Include="BaseDatos\FoodCashDB.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>FoodCashDB.edmx</DependentUpon>
@@ -146,33 +146,33 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Persona.cs">
+    <Compile Include="BaseDatos\Persona.cs">
       <DependentUpon>FoodCashDB.tt</DependentUpon>
     </Compile>
-    <Compile Include="Producto.cs">
+    <Compile Include="BaseDatos\Producto.cs">
       <DependentUpon>FoodCashDB.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Rol.cs">
+    <Compile Include="BaseDatos\Rol.cs">
       <DependentUpon>FoodCashDB.tt</DependentUpon>
     </Compile>
-    <Compile Include="sysdiagrams.cs">
+    <Compile Include="BaseDatos\sysdiagrams.cs">
       <DependentUpon>FoodCashDB.tt</DependentUpon>
     </Compile>
-    <Compile Include="Usuario.cs">
+    <Compile Include="BaseDatos\Usuario.cs">
       <DependentUpon>FoodCashDB.tt</DependentUpon>
     </Compile>
-    <Compile Include="Ventas.cs">
+    <Compile Include="BaseDatos\Ventas.cs">
       <DependentUpon>FoodCashDB.tt</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
-    <EntityDeploy Include="FoodCashDB.edmx">
+    <EntityDeploy Include="BaseDatos\FoodCashDB.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>FoodCashDB.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="FoodCashDB.edmx.diagram">
+    <Content Include="BaseDatos\FoodCashDB.edmx.diagram">
       <DependentUpon>FoodCashDB.edmx</DependentUpon>
     </Content>
     <None Include="packages.config" />

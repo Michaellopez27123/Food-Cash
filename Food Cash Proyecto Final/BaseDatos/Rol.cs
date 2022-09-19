@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Food_Cash_Proyecto_Final
+namespace Food_Cash_Proyecto_Final.BaseDatos
 {
     using System;
     using System.Collections.Generic;

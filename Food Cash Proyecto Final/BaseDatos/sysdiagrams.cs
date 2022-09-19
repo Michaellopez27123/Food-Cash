@@ -7,17 +7,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Food_Cash_Proyecto_Final
+namespace Food_Cash_Proyecto_Final.BaseDatos
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Usuario
+    public partial class sysdiagrams
     {
-        public long id_usuario { get; set; }
-        public string contrasena { get; set; }
-        public string estado { get; set; }
-    
-        public virtual Persona Persona { get; set; }
+        public string name { get; set; }
+        public int principal_id { get; set; }
+        public int diagram_id { get; set; }
+        public Nullable<int> version { get; set; }
+        public byte[] definition { get; set; }
     }
 }
