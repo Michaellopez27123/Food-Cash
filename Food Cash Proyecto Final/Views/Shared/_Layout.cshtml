@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap" rel="stylesheet">
+    <link href="~/Content/Index.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.8.3.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <section class="contenedor nav">
+                <div class="logo">
+                    
+                </div>
+                <div class="enlaces-header">
+                    @Html.ActionLink("Inicio", "Index", "Home")
+                    @Html.ActionLink("Sobre nosotros", "Nosotros", "Home")
+                    @Html.ActionLink("Sedes", "Sedes", "Home")
+                    @Html.ActionLink("Contacto", "Contacto", "Home")
+                </div>
+                <div class="hamburguer">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </section>
+        </nav>
+
+    </header>
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+
+    <footer>
+        <div class="partFooter">
+            <img src="~/Imagenes/logo.png" alt="">
+        </div>
+        <div class="partFooter">
+            <h4>Food Cash</h4>
+            <a href="#">Michael Andres Lopez Cardenas</a>
+            <a href="#">Brayan David Muñoz Valbuena</a>
+            <a href="#">michael.lopez@pi.edu.co</a>
+            <a href="#">+57 3115135119</a>
+        </div>
+        <div class="partFooter">
+            <h4>Acerca de</h4>
+            <a href="#">Sobre nosotros</a>
+            <a href="#">Sedes</a>
+            <a href="#">Contacto</a>
+        </div>
+        <div class="partFooter">
+            <h4>Redes sociales</h4>
+            <div class="social-media">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UCTct13v6NGgH5RYMAla6FWg"><i class="fab fa-youtube"></i></a>
+            </div>
+
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/d49ad5ab73.js" crossorigin="anonymous"></script>
+</body>
+</html>
