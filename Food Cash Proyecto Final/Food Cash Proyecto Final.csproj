@@ -95,6 +95,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\Account.css" />
+    <Content Include="Content\Contacto.css" />
     <Content Include="Content\Index.css" />
     <Content Include="Content\Site.css" />
     <Content Include="BaseDatos\FoodCashDB.Context.tt">
@@ -110,6 +111,7 @@
     <Content Include="Global.asax" />
     <Content Include="Imagenes\Caja.png" />
     <Content Include="Imagenes\Index.jpg" />
+    <Content Include="Imagenes\Index2.jpg" />
     <Content Include="Imagenes\Inventarios.png" />
     <Content Include="Imagenes\logo.png" />
     <Content Include="Imagenes\Reporte.png" />
