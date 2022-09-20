@@ -11,8 +11,10 @@ namespace Food_Cash_Proyecto_Final.Controllers
         // GET: ConecxionDB
         public ActionResult Login()
         {
-         
 
+            FoodCashEntities db = new FoodCashEntities();
+
+            ConexionBDController.
 
             return View();
         }

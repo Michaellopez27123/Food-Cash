@@ -9,9 +9,12 @@ namespace Food_Cash_Proyecto_Final.Controllers
     public class AccountController : Controller
     {
         // GET: Account
+
         public ActionResult Login()
         {
             return View();
         }
+
+
     }
 }
