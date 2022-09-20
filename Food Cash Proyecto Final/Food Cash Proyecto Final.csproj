@@ -107,6 +107,7 @@
       <DependentUpon>FoodCashDB.edmx</DependentUpon>
       <LastGenOutput>FoodCashDB.cs</LastGenOutput>
     </Content>
+    <Content Include="Content\Tablas.css" />
     <Content Include="Global.asax" />
     <Content Include="Imagenes\Caja.png" />
     <Content Include="Imagenes\Index.jpg" />
